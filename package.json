@@ -1,0 +1,21 @@
+{
+  "name": "vivid-hope-theme-vscode",
+  "displayName": "Vivid Hope VS Code Theme",
+  "description": "Dark theme with bright colors",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Vivid Hope Dark",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Vivid Hope Dark-color-theme.json"
+      }
+    ]
+  }
+}
