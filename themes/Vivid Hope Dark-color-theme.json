@@ -29,7 +29,16 @@
     "list.activeSelectionIconForeground": "#FFF",
     "terminal.inactiveSelectionBackground": "#3A3D41",
     "widget.border": "#303031",
-    "actionBar.toggledBackground": "#383a49"
+    "actionBar.toggledBackground": "#383a49",
+    "activityBar.background": "#202020",
+    "sideBar.background": "#121212",
+    "titleBar.activeBackground": "#323233",
+    "titleBar.inactiveBackground": "#3c3c3c",
+    "editorGroupHeader.tabsBackground": "#252526",
+    "tab.activeBackground": "#094771",
+    "tab.inactiveBackground": "#2c2c2c00",
+    "tab.border": "#000000",
+    "statusBar.background": "#007acc"
   },
   "tokenColors": [
     {
