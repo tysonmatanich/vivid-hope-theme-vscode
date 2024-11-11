@@ -3,6 +3,7 @@
   "displayName": "Vivid Hope VS Code Theme",
   "description": "Dark theme with bright colors",
   "version": "0.0.1",
+  "publisher": "matanich",
   "engines": {
     "vscode": "^1.95.0"
   },
