@@ -4,6 +4,11 @@
   "description": "Dark theme with bright colors",
   "version": "0.0.1",
   "publisher": "matanich",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tysonmatanich/vivid-hope-theme-vscode.git"
+  },
+  "icon": "icon.png",
   "engines": {
     "vscode": "^1.95.0"
   },
