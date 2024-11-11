@@ -2,7 +2,7 @@
 
 ## Install
 
-1. Go to [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=tysonmatanich.vivid-hope-theme-vscode)
+1. Go to [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=matanich.vivid-hope-theme-vscode)
 2. Click on the "Install" button
 3. Then [select a theme](https://code.visualstudio.com/docs/getstarted/themes#_selecting-the-color-theme):
    - `Vivid Hope Dark`
