@@ -1,4 +1,11 @@
-.vscode/**
-.vscode-test/**
-.gitignore
-vsc-extension-quickstart.md
+# Ignore everything
+**
+
+# Whitelist what is included in VSIX file
+!assets/icon.png
+!node_modules/tinycolor2/**/*
+!src/*
+!themes/*
+!CHANGELOG.md
+!package.json
+!README.md
