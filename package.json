@@ -1,27 +1,131 @@
 {
   "name": "vivid-hope-theme-vscode",
-  "displayName": "Vivid Hope VS Code Theme",
-  "description": "Dark theme with bright colors",
-  "version": "0.0.2",
+  "shortName": "vivid-hope",
+  "displayName": "Vivid Hope Theme",
+  "shortDisplayName": "Vivid Hope",
+  "description": "Dark theme with bright customizable colors",
+  "version": "0.0.4",
   "publisher": "matanich",
   "repository": {
     "type": "git",
     "url": "https://github.com/tysonmatanich/vivid-hope-theme-vscode.git"
   },
-  "icon": "icon.png",
+  "qna": false,
+  "icon": "./assets/icon.png",
+  "galleryBanner": {
+    "color": "#000000",
+    "theme": "dark"
+  },
   "engines": {
     "vscode": "^1.95.0"
   },
   "categories": [
     "Themes"
   ],
+  "keywords": [
+    "Theme",
+    "Customizable",
+    "Dark",
+    "Configure",
+    "Themable",
+    "Colors",
+    "Settings"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "extensionKind": [
+    "ui"
+  ],
+  "main": "./src/extension.js",
+  "scripts": {
+    "vscode:prepublish": "node ./src/generateTheme.js",
+    "package": "vsce package --skip-license",
+    "install": "code --install-extension vivid-hope-theme-vscode-0.0.4.vsix"
+  },
   "contributes": {
+    "commands": [
+      {
+        "command": "extension.reloadWindow",
+        "title": "Reload Window"
+      }
+    ],
+    "configuration": {
+      "properties": {
+        "vivid-hope.color1": {
+          "type": "string",
+          "default": "#1e78ff",
+          "scope": "machine",
+          "description": "Custom color 1 (defaults to dark blue)"
+        },
+        "vivid-hope.color2": {
+          "type": "string",
+          "default": "#00cbf5",
+          "scope": "machine",
+          "description": "Custom color 2 (defaults to blue)"
+        },
+        "vivid-hope.color3": {
+          "type": "string",
+          "default": "#00be6e",
+          "scope": "machine",
+          "description": "Custom color 3 (defaults to green)"
+        },
+        "vivid-hope.color4": {
+          "type": "string",
+          "default": "#e6c84c",
+          "scope": "machine",
+          "description": "Custom color 4 (defaults to yellow)"
+        },
+        "vivid-hope.color5": {
+          "type": "string",
+          "default": "#ff783d",
+          "scope": "machine",
+          "description": "Custom color 5 (defaults to orange)"
+        },
+        "vivid-hope.color6": {
+          "type": "string",
+          "default": "#f03c46",
+          "scope": "machine",
+          "description": "Custom color 6 (defaults to red)"
+        },
+        "vivid-hope.color7": {
+          "type": "string",
+          "default": "#f05aaa",
+          "scope": "machine",
+          "description": "Custom color 7 (defaults to pink)"
+        },
+        "vivid-hope.color8": {
+          "type": "string",
+          "default": "#aa78ff",
+          "scope": "machine",
+          "description": "Custom color 7 (defaults to purple)"
+        },
+        "vivid-hope.color9": {
+          "type": "string",
+          "default": "#787878",
+          "scope": "machine",
+          "description": "Custom color 7 (defaults to dark gray)"
+        },
+        "vivid-hope.color10": {
+          "type": "string",
+          "default": "#c8c8c8",
+          "scope": "machine",
+          "description": "Custom color 7 (defaults to light gray)"
+        }
+      }
+    },
     "themes": [
       {
         "label": "Vivid Hope Dark",
         "uiTheme": "vs-dark",
-        "path": "./themes/Vivid Hope Dark-color-theme.json"
+        "path": "./themes/vivid-hope-dark.json"
       }
     ]
+  },
+  "dependencies": {
+    "tinycolor2": "^1.4.2"
+  },
+  "devDependencies": {
+    "@types/tinycolor2": "^1.4.1"
   }
 }

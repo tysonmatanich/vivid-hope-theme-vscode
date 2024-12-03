@@ -1,0 +1,19 @@
+{
+  // Comment
+  "string": "Hello, World!",
+  "number": 12345,
+  "boolean": true,
+  "null_value": null,
+  "array": [1, 2, 3, "four", true, null], /* comment */
+  "object": {
+    "nested_string": "Nested Hello",
+    "nested_number": 678.90,
+    "nested_array": ["alpha", "beta", "\n"],
+    "nested_object": {
+      "key": "value",
+      "another key": 123
+    }
+  },
+  "url": "https://example.com",
+  "date": "2023-12-31T23:59:59.000Z"
+}

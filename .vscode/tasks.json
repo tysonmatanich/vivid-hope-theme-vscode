@@ -1,0 +1,10 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "npm:vscode:prepublish",
+      "type": "shell",
+      "command": "npm run vscode:prepublish"
+    }
+  ]
+}

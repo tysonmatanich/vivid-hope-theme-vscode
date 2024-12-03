@@ -1,0 +1,104 @@
+:root {
+  --width: 200px;
+  --height: 50px;
+}
+
+@font-face {
+  font-family: 'Verdana';
+  src:
+    url('../fonts/verdana.woff2') format('woff2'),
+    url('../fonts/verdana.woff') format('woff'),
+    url('../fonts/verdana.ttf') format('truetype');
+  font-display: swap;
+}
+
+@media only screen and (min-height: 600px) {
+  div {
+    margin: auto;
+  }
+
+  div::after {
+    content: '';
+    position: absolute;
+  }
+
+  madeup {
+    madeup: madeup;
+  }
+}
+
+.my-class[id="foo"] {
+  width: 100%;
+  overflow: hidden;
+  box-shadow:
+    2px 2px 5px #0009,
+    5px 5px 10px #000c;
+  border-radius: 11px;
+}
+
+.my-class>.my-sub-class {
+  width: 100%;
+}
+
+.my-class>.my-sub-class {
+  min-width: var(--width);
+  background: #dee7f7 url('../images/background.png') no-repeat;
+  background-position: right bottom;
+  grid-template-rows: var(--height) 1fr 0 0;
+}
+
+@media only screen and (min-width: 470px) {
+  .my-class>.my-sub-class {
+    padding-bottom: 12px;
+  }
+}
+
+@media only screen and (min-height: 600px) {
+  .my-class>.my-sub-class {
+    grid-template-rows: var(--height) 1fr 112px;
+  }
+}
+
+.my-class>.my-sub-class>.border-window {
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  background-image: url('../images/left.png'), url('../images/right.png');
+  background-repeat: no-repeat, no-repeat;
+  background-position:
+    bottom left,
+    bottom right;
+  clip-path: polygon(0 var(--height), 100% 21px, 100% 100%, 0 100%);
+  pointer-events: none;
+}
+
+.toolbar {
+  overflow: hidden;
+}
+
+.toolbar>.container {
+  width: 100%;
+}
+
+.toolbar>.container .toolbar-left {
+  place-items: center;
+  background-image: url('../images/toolbar/background.png');
+}
+
+.toolbar>.container .toolbar-left>div {
+  text-wrap: nowrap;
+}
+
+.toolbar>.container .toolbar-left>div:nth-child(n + 3) {
+  display: none;
+}
+
+@media only screen and (min-width: 346px) {
+  .toolbar>.container .toolbar-left {
+    grid-template-columns: auto auto auto;
+  }
+
+  .toolbar>.container .toolbar-left>div:nth-child(n + 4) {
+    display: none;
+  }
+}

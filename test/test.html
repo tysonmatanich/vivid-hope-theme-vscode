@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <link href="./test.css" rel="stylesheet" />
+    <style>
+      #app {
+        margin: 1em;
+        text-align: left;
+      }
+    </style>
+    <script src="script.js"></script>
+    <script>
+      window.alert("Hello World");
+    </script>
+  </head>
+  <body>
+    <!-- Comment -->
+    <header>Header</header>
+    <aside>Aside</aside>
+    <section>Section</section>
+    <footer>Footer</footer>
+    <main id="app">
+      <div class="special-content">
+        <a target="_blank" href="/sample">Sample</a>
+        <img src="image.png" alt="Image" />
+        <picture>
+          <source srcset="mdn-logo-wide.png" media="(min-width: 800px)" />
+          <source srcset="mdn-logo-medium.png" media="(min-width: 600px)" />
+          <img src="mdn-logo-narrow.png" alt="MDN Web Docs" />
+        </picture>
+        <video>
+          <track default kind="captions" srclang="en" src="/media/examples/friday.vtt" />
+          <source src="/media/cc0-videos/flower.webm" type="video/webm" />
+          <source src="/media/cc0-videos/flower.mp4" type="video/mp4" />
+        </video>
+        <audio controls src="/media/cc0-audio/t-rex-roar.mp3"></audio>
+        <iframe title="Inline Frame Example" width="300" height="200" src="embed.html"></iframe>
+        <svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" height="60vmin" width="60vmin">
+          <rect x="0" y="0" width="50%" height="50%" fill="tomato" opacity="0.75" />
+          <rect x="25%" y="25%" width="50%" height="50%" fill="slategrey" opacity="0.75" />
+        </svg>
+        <math display="inline">
+          <mfrac>
+            <msup>
+              <mi>π</mi>
+              <mn>2</mn>
+            </msup>
+            <mn>6</mn>
+          </mfrac>
+        </math>
+        <canvas id="canvas">An alternative text describing what your canvas displays.</canvas>
+        <noscript>
+          <!-- anchor linking to external file -->
+          <a href="https://www.mozilla.org/">External Link</a>
+        </noscript>
+      </div>
+      <form class="form-elements">
+        <button>Button</button>
+        <label for="input">Label</label>
+        <textarea></textarea>
+        <input id="input" type="text" value="" />
+        <select name="pets">
+          <option value="dog">Dog</option>
+          <option value="cat">Cat</option>
+          <option value="hamster">Hamster</option>
+          <option value="parrot">Parrot</option>
+          <option value="spider">Spider</option>
+          <option value="goldfish">Goldfish</option>
+        </select>
+        <select name="foods" id="hr-select">
+          <option value="">Choose a food</option>
+          <hr />
+          <optgroup label="Fruit">
+            <option value="apple">Apples</option>
+            <option value="banana">Bananas</option>
+          </optgroup>
+          <hr />
+          <optgroup label="Vegetables">
+            <option value="artichoke">Artichokes</option>
+            <option value="broccoli">Broccoli</option>
+          </optgroup>
+        </select>
+        <progress id="progress" max="100" value="70">70%</progress>
+        <output name="result" for="input progress">70</output>
+        <meter min="0" max="100" low="33" high="66" optimum="80" value="50">at 50/100</meter>
+        <fieldset>
+          <legend>Choose your favorite monster</legend>
+          <input type="radio" id="kraken" name="monster" value="K" />
+          <label for="kraken">Kraken</label><br />
+          <input type="radio" id="sasquatch" name="monster" value="S" />
+          <label for="sasquatch">Sasquatch</label><br />
+          <input type="radio" id="mothman" name="monster" value="M" />
+          <label for="mothman">Mothman</label>
+        </fieldset>
+        <datalist id="ice-cream-flavors">
+          <option value="Chocolate"></option>
+          <option value="Strawberry"></option>
+          <option value="Vanilla"></option>
+        </datalist>
+      </form>
+      <div class="webcomponent-elements interactive-elements">
+        <slot name="attributes"><p>None</p></slot>
+        <template id="productrow">
+          <tr>
+            <td class="record"></td>
+            <td></td>
+          </tr>
+        </template>
+        <nav class="crumbs">
+          <ol>
+            <li class="crumb"><a href="#">Bikes</a></li>
+            <li class="crumb"><a href="#">BMX</a></li>
+            <li class="crumb">Jump Bike 3000</li>
+          </ol>
+        </nav>
+        <menu>
+          <li><button id="save">Save for later</button></li>
+          <li><button id="share">Share this news</button></li>
+        </menu>
+        <dialog open>
+          <p>Greetings, one and all!</p>
+          <form method="dialog">
+            <button>OK</button>
+          </form>
+        </dialog>
+        <details>
+          <summary>Details</summary>
+          Something small enough to escape casual notice.
+        </details>
+      </div>
+      <div class="obsolete-elements deprecated-elements">
+        <acronym></acronym>
+        <font></font>
+      </div>
+    </main>
+  </body>
+</html>

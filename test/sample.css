@@ -1,0 +1,17 @@
+:root {
+  --width: 200px;
+}
+
+@media only screen and (min-height: 600px) {
+  div {
+    margin: auto;
+    width: 100%;
+    min-width: var(--width);
+    color: #ff00ff;
+  }
+}
+
+#main > .class {
+  background: #000 url('/images/bg.png') no-repeat;
+  background-position: right bottom;
+}
