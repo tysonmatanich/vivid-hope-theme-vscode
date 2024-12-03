@@ -4,11 +4,14 @@
   "displayName": "Vivid Hope Theme",
   "shortDisplayName": "Vivid Hope",
   "description": "Dark theme with bright customizable colors",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "publisher": "matanich",
   "repository": {
     "type": "git",
     "url": "https://github.com/tysonmatanich/vivid-hope-theme-vscode.git"
+  },
+  "sponsor": {
+    "url": "https://github.com/sponsors/tysonmatanich"
   },
   "qna": false,
   "icon": "assets/icon.png",
@@ -120,10 +123,7 @@
         "uiTheme": "vs-dark",
         "path": "./themes/vivid-hope-dark.json"
       }
-    ],
-    "sponsor": {
-      "url": "https://github.com/sponsors/tysonmatanich"
-    }
+    ]
   },
   "dependencies": {
     "tinycolor2": "^1.4.2"
