@@ -4,7 +4,7 @@
   "displayName": "Vivid Hope Theme",
   "shortDisplayName": "Vivid Hope",
   "description": "Dark theme with bright customizable colors",
-  "version": "0.0.4",
+  "version": "0.0.3",
   "publisher": "matanich",
   "repository": {
     "type": "git",
@@ -41,7 +41,7 @@
   "scripts": {
     "vscode:prepublish": "node ./src/generateTheme.js",
     "package": "vsce package --skip-license",
-    "install": "code --install-extension vivid-hope-theme-vscode-0.0.4.vsix"
+    "install-ext": "node installExtension.js"
   },
   "contributes": {
     "commands": [
