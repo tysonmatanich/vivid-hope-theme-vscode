@@ -5,10 +5,13 @@
 [![Downloads](https://vsmarketplacebadges.dev/downloads/matanich.vivid-hope-theme-vscode.png)](https://marketplace.visualstudio.com/items?itemName=matanich.vivid-hope-theme-vscode)
 [![Installs](https://vsmarketplacebadges.dev/installs/matanich.vivid-hope-theme-vscode.png)](https://marketplace.visualstudio.com/items?itemName=matanich.vivid-hope-theme-vscode)
 [![Rating](https://vsmarketplacebadges.dev/rating/matanich.vivid-hope-theme-vscode.png)](https://marketplace.visualstudio.com/items?itemName=matanich.vivid-hope-theme-vscode)
+[![Sponsor](https://img.shields.io/badge/Sponsor-❤-red)](https://github.com/sponsors/tysonmatanich)
 
 🎨 **Customizable Colors:** Easily override any of 10 base colors!
 
 Finally, a theme that allows you to **easily configure colors**, without messing with `workbench.colorCustomizations`. Any of the 10 colors used can be overridden in [user settings](https://code.visualstudio.com/docs/getstarted/settings#_user-settings).
+
+If you find this theme useful and want to say thank you, consider sponsoring me on [GitHub Sponsors](https://github.com/sponsors/tysonmatanich).
 
 ## Screenshots
 
