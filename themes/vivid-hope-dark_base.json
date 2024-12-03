@@ -67,14 +67,16 @@
     { "scope": "constant.regexp", "settings": { "foreground": "#646695" } },
     { "scope": "entity.name.tag", "settings": { "foreground": "${vivid-hope.color7}" } },
     {
-      "scope": ["entity.name.tag.css", "entity.name.tag.less"],
+      "scope": [
+        "entity.name.tag.css",
+        "entity.name.tag.less"
+      ],
       "settings": { "foreground": "${vivid-hope.color4}" }
     },
     {
       "scope": "entity.other.attribute-name",
       "settings": { "foreground": "${vivid-hope.color4}" }
     },
-
     {
       "scope": [
         "entity.other.attribute-name.class.css",
@@ -88,15 +90,10 @@
       ],
       "settings": { "foreground": "${vivid-hope.color4}" }
     },
-
     {
-      "scope": [
-        "entity.other.attribute-name.pseudo-element.css"
-      ],
+      "scope": "entity.other.attribute-name.pseudo-element.css",
       "settings": { "foreground": "${vivid-hope.color3}" }
     },
-
-
     { "scope": "invalid", "settings": { "foreground": "#f44747" } },
     { "scope": "markup.underline", "settings": { "fontStyle": "underline" } },
     {
@@ -202,13 +199,14 @@
     },
     {
       "name": "HTML Deprecated Tags",
-      "scope": [
-        "invalid.deprecated"
-      ],
+      "scope": "invalid.deprecated",
       "settings": { "foreground": "${vivid-hope.color6}" }
     },
     {
-      "scope": ["meta.preprocessor", "entity.name.function.preprocessor"],
+      "scope": [
+        "meta.preprocessor",
+        "entity.name.function.preprocessor"
+      ],
       "settings": { "foreground": "${vivid-hope.color7}" }
     },
     {
@@ -227,11 +225,17 @@
     { "scope": "storage", "settings": { "foreground": "${vivid-hope.color7}" } },
     { "scope": "storage.type", "settings": { "foreground": "${vivid-hope.color6}" } },
     {
-      "scope": ["storage.modifier", "keyword.operator.noexcept"],
+      "scope": [
+        "storage.modifier",
+        "keyword.operator.noexcept"
+      ],
       "settings": { "foreground": "${vivid-hope.color7}" }
     },
     {
-      "scope": ["string", "meta.embedded.assembly"],
+      "scope": [
+        "string",
+        "meta.embedded.assembly"
+      ],
       "settings": { "foreground": "${vivid-hope.color2}" }
     },
     { "scope": "string.tag", "settings": { "foreground": "#ce9178" } },
@@ -247,11 +251,9 @@
     },
     {
       "name": "Reset JavaScript string interpolation expression",
-      "scope": ["meta.template.expression"],
+      "scope": "meta.template.expression",
       "settings": { "foreground": "#d4d4d4" }
     },
-
-
     {
       "scope": [
         "support.type.vendored.property-name",
@@ -260,15 +262,10 @@
       ],
       "settings": { "foreground": "${vivid-hope.color2}" }
     },
-
     {
-      "scope": [
-        "support.type.property-name.json"
-      ],
+      "scope": "support.type.property-name.json",
       "settings": { "foreground": "${vivid-hope.color10}" }
     },
-
-
     {
       "scope": [
         "_string.quoted.single.css",
@@ -277,9 +274,7 @@
       "settings": { "foreground": "${vivid-hope.color3}" }
     },
     {
-      "scope": [
-        "source.css variable"
-      ],
+      "scope": "source.css variable",
       "settings": { "foreground": "${vivid-hope.color8}" }
     },
     { "scope": "keyword", "settings": { "foreground": "${vivid-hope.color7}" } },
@@ -422,22 +417,26 @@
       "settings": { "foreground": "${vivid-hope.color8}" }
     },
     {
-      "scope": ["support.variable"],
+      "scope": "support.variable",
       "settings": { "foreground": "${vivid-hope.color1}" }
     },
     {
       "name": "Constants and enums",
-      "scope": ["variable.other.constant", "variable.other.enummember"],
+      "scope": [
+        "variable.other.constant",
+        "variable.other.enummember"
+      ],
       "settings": { "foreground": "${vivid-hope.color10}" }
     },
     {
       "name": "Object keys, TS grammar specific",
-      "scope": ["meta.object-literal.key"],
+      "scope": "meta.object-literal.key",
       "settings": { "foreground": "#9CDCFE" }
     },
-    { "scope": [
-      "source.css keyword.control",
-      "punctuation.definition.constant.css"
+    {
+      "scope": [
+        "source.css keyword.control",
+        "punctuation.definition.constant.css"
       ],
       "settings": { "foreground": "${vivid-hope.color3}" } },
     {
@@ -454,12 +453,9 @@
     },
     {
       "name": "CSS property value",
-      "scope": [
-        "constant.other.color.rgb-value"
-      ],
+      "scope": "constant.other.color.rgb-value",
       "settings": { "foreground": "${vivid-hope.color5}" }
     },
-
     {
       "name": "Regular expression",
       "scope": [
@@ -470,9 +466,7 @@
     },
     {
       "name": "Regular expression",
-      "scope": [
-        "string.regexp keyword.operator"
-      ],
+      "scope": "string.regexp keyword.operator",
       "settings": { "foreground": "${vivid-hope.color7}" }
     },
     {
@@ -495,9 +489,7 @@
     },
     {
       "name": "Regular expression escape",
-      "scope": [
-        "constant.character.escape.backslash.regexp"
-      ],
+      "scope": "constant.character.escape.backslash.regexp",
       "settings": { "foreground": "${vivid-hope.color8}" }
     },
     {
@@ -506,7 +498,10 @@
       "settings": { "foreground": "${vivid-hope.color10}" }
     },
     {
-      "scope": ["constant.character", "constant.other.option"],
+      "scope": [
+        "constant.character",
+        "constant.other.option"
+      ],
       "settings": { "foreground": "${vivid-hope.color4}" }
     },
     {

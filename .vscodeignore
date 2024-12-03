@@ -6,6 +6,5 @@
 !node_modules/tinycolor2/**/*
 !src/*
 !themes/*
-!CHANGELOG.md
 !package.json
 !README.md

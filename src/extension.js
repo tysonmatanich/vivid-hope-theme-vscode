@@ -16,20 +16,6 @@ async function activate(context) {
     })
   );
 
-  // context.subscriptions.push(
-  //   vscode.commands.registerCommand("extension.reloadExtension", (_) => {
-  //     deactivate();
-  //     for (const sub of context.subscriptions) {
-  //       try {
-  //         sub.dispose();
-  //       } catch (e) {
-  //         console.error(e);
-  //       }
-  //     }
-  //     activate(context);
-  //   })
-  // );
-
   // Cache info that doesn't change
   themeInfo = getThemeInfo();
   colorNames = Object.keys(getGlobalSettings().namedColors);
@@ -99,7 +85,6 @@ function promptReload() {
   vscode.window.showInformationMessage("Please reload to apply theme changes.", reloadButton).then(async (selected) => {
     if (selected === reloadButton) {
       vscode.commands.executeCommand("extension.reloadWindow");
-      //vscode.commands.executeCommand("extension.reloadExtension");
     }
   });
 }
