@@ -11,7 +11,7 @@
     "url": "https://github.com/tysonmatanich/vivid-hope-theme-vscode.git"
   },
   "qna": false,
-  "icon": "./assets/icon.png",
+  "icon": "assets/icon.png",
   "galleryBanner": {
     "color": "#000000",
     "theme": "dark"
