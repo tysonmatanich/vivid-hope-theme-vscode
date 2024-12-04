@@ -157,7 +157,7 @@
       "scope": "markup.bold",
       "settings": {
         "fontStyle": "bold",
-        "foreground": "#f05aaa"
+        "foreground": "#aa78ff"
       }
     },
     {
@@ -170,7 +170,8 @@
     {
       "scope": "markup.italic",
       "settings": {
-        "fontStyle": "italic"
+        "fontStyle": "italic",
+        "foreground": "#aa78ff"
       }
     },
     {
@@ -206,13 +207,23 @@
     {
       "scope": "punctuation.definition.list.begin.markdown",
       "settings": {
-        "foreground": "#6796e6"
+        "foreground": "#e6c84c"
       }
     },
     {
-      "scope": "markup.inline.raw",
+      "scope": "fenced_code.block.language",
       "settings": {
-        "foreground": "#ce9178"
+        "foreground": "#ff783d"
+      }
+    },
+    {
+      "scope": [
+        "markup.underline.link",
+        "markup.fenced_code",
+        "markup.inline.raw"
+      ],
+      "settings": {
+        "foreground": "#00be6e"
       }
     },
     {

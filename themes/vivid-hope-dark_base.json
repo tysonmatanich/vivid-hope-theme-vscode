@@ -98,13 +98,13 @@
     { "scope": "markup.underline", "settings": { "fontStyle": "underline" } },
     {
       "scope": "markup.bold",
-      "settings": { "fontStyle": "bold", "foreground": "${vivid-hope.color7}" }
+      "settings": { "fontStyle": "bold", "foreground": "${vivid-hope.color8}" }
     },
     {
       "scope": "markup.heading",
       "settings": { "fontStyle": "bold", "foreground": "${vivid-hope.color7}" }
     },
-    { "scope": "markup.italic", "settings": { "fontStyle": "italic" } },
+    { "scope": "markup.italic", "settings": { "fontStyle": "italic", "foreground": "${vivid-hope.color8}" } },
     {
       "scope": "markup.strikethrough",
       "settings": { "fontStyle": "strikethrough" }
@@ -118,9 +118,18 @@
     },
     {
       "scope": "punctuation.definition.list.begin.markdown",
-      "settings": { "foreground": "#6796e6" }
+      "settings": { "foreground": "${vivid-hope.color4}" }
     },
-    { "scope": "markup.inline.raw", "settings": { "foreground": "#ce9178" } },
+    {
+      "scope": "fenced_code.block.language",
+      "settings": { "foreground": "${vivid-hope.color5}" }
+    },
+    { "scope": [
+        "markup.underline.link",
+        "markup.fenced_code",
+        "markup.inline.raw"
+      ],
+      "settings": { "foreground": "${vivid-hope.color3}" } },
     {
       "name": "brackets of XML/HTML tags",
       "scope": "punctuation.definition.tag",
